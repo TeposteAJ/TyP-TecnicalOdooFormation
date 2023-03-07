@@ -4,7 +4,7 @@ from odoo import models, fields, api
 
 class SpaceshipModel(models.Model):
 
-    _name = 'spacial_mison.spaceship'  #nombre de modulo (carpeta) . nombre del archivo del modelo
+    _name = 'spacial_mision.spaceship'  #nombre de modulo (carpeta) . nombre del archivo del modelo
     _description = 'Spaceship Info'
 
     name = fields.Char(string='Title', required=True, index=True)
