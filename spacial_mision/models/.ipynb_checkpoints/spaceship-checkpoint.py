@@ -2,20 +2,29 @@
 
 from odoo import models, fields, api
 
-class Task(models.Model):
+class SpaceshipModel(models.Model):
 
-    _name = 'volunteers.task'
-    _description = 'Task Info'
+    _name = 'spacial_mison.spaceship'  #nombre de modulo (carpeta) . nombre del archivo del modelo
+    _description = 'Spaceship Info'
 
-name = fields.Char(string='Title', required=True, index=True)
-start_time = fields.Datetime(string='Start date')
-stop_time = fields.Datetime(string='Ending')
-ocurrences = fields.Integer(default=0)
-description = fields.Text(string='Task description')
-task_type = fields.Selection(string='Opciones para elegir',
-                             selection=[('opcion1', 'OPCION 1'),
-                                        ('opcion2', 'OPCION 2'),
-                                        ('opcion3', 'OPCION 3'),],
-                             copy=False,
+    name = fields.Char(string='Title', required=True, index=True)
+    active = fields.Boolean(default=True)
+    type = fields.Selection(string='Opciones para elegir',
+                            selection=[('freighter', 'Freighter'),
+                                       ('transport', 'Transport'),
+                                       ('scout_ship', 'Scout ship'),
+                                       ('fighter','Fighter'),],
+                            copy=False,
                             )
-active = fields.Boolean(default=True)
+    model = fields.Char(string='Model', required=True, index=True)
+    build_date = fields.Date(string='Build date')
+    chaptain = fields.Char(string='Chaptain', required=True, index=True)
+    required_crew = fields.Integer(default=0, required=True, string='Required Crew')
+    length = fields.Float(default=0, string='Spaceship Length [meters]')
+    width = fields.Float(default=0, string='Spaceship Width [meters]')
+    engine_number = fields.Char(string='Engine Number')
+    fuel_type = fields.Selection(string='Fuel Type',
+                                 selection=[('solid_fuel','Solid Fuel'),
+                                           ('liquid_fuel','Liquid Fuel'),],
+                                )
+    max_ocupation = fields.Integer(default=2, string='Max Number of Tripulants')

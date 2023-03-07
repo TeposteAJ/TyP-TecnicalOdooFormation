@@ -15,7 +15,9 @@
     'category': 'Training',
     'depends': ['base'],
     'data': [],
-    'demo': [],
+    'demo': [
+        'demo/spacemision_demo.xml',
+    ],
     'installable':True,
     'auto_install': False,
     'aplication': True,
