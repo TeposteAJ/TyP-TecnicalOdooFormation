@@ -14,7 +14,11 @@
     'license': 'GPL-3',
     'category': 'Training',
     'depends': ['base'],
-    'data': [],
+    'data': [
+        'security/spacial_mision_groups.xml',
+        'security/spacial_mision_security.xml',
+        'security/ir.model.access.csv',
+    ],
     'demo': [
         'demo/spacemision_demo.xml',
     ],
