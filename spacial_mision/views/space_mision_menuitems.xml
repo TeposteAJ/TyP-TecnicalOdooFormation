@@ -14,7 +14,7 @@
             </field>
         </record>
         
-        <menuitem name="Odoo Space Mision"
+        <menuitem name="Moon Mission"
                   id="menu_space"
                   sequence="1"/>
         
