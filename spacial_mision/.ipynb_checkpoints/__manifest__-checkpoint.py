@@ -18,6 +18,7 @@
         'security/spacial_mision_groups.xml',
         'security/spacial_mision_security.xml',
         'security/ir.model.access.csv',
+        'views/space_mision_menuitems.xml',
     ],
     'demo': [
         'demo/spacemision_demo.xml',
