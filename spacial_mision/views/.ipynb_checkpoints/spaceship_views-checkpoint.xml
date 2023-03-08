@@ -87,7 +87,7 @@
                     
                     <filter string="Active Spaceship" name="active"
                             domain="[('active', '=', True)]" context="{'active': 'True'}"/> 
-
+                    
                 </search>
             </field>
         </record>

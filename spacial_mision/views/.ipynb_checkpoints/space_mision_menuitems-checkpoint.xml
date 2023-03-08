@@ -16,6 +16,7 @@
         
         <menuitem name="Moon Mission"
                   id="menu_space"
+                  web_icon="spacial_mision,static/description/mission.png"
                   sequence="1"/>
         
         <menuitem id="menu_space_sub" name="Odoo Space Mision" parent="menu_space" sequence="2"/>

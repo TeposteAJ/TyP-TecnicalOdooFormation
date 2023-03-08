@@ -9,10 +9,10 @@
     #     - Clients
     #     -Books
     # """,
-    'author': 'Angela Tesposte',
+    'author': 'Ángela Teposte',
     'website': 'https://github.com/TeposteAJ',
     'license': 'GPL-3',
-    'category': 'Training',
+    'category': 'Custom Modules/ Tech Training',
     'depends': ['base'],
     'data': [
         'security/spacial_mision_groups.xml',
