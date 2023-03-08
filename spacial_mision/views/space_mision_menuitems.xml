@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Views -->
+<!-- Views- Menu Spacial Mission -->
 <odoo>
     <data>
         <record model="ir.actions.act_window" id="spaceship_list_action">

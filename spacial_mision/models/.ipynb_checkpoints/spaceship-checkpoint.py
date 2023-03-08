@@ -9,7 +9,7 @@ class SpaceshipModel(models.Model):
 
     name = fields.Char(string='Title', required=True, index=True)
     active = fields.Boolean(default=True)
-    type = fields.Selection(string='Opciones para elegir',
+    type = fields.Selection(string='Spaceship Type',
                             selection=[('freighter', 'Freighter'),
                                        ('transport', 'Transport'),
                                        ('scout_ship', 'Scout ship'),
@@ -18,7 +18,7 @@ class SpaceshipModel(models.Model):
                             )
     model = fields.Char(string='Model', required=True, index=True)
     build_date = fields.Date(string='Build date')
-    chaptain = fields.Char(string='Chaptain', required=True, index=True)
+    chaptain = fields.Char(string='Captain', required=True, index=True)
     required_crew = fields.Integer(default=0, required=True, string='Required Crew')
     length = fields.Float(default=0, string='Spaceship Length [meters]')
     width = fields.Float(default=0, string='Spaceship Width [meters]')
@@ -27,4 +27,4 @@ class SpaceshipModel(models.Model):
                                  selection=[('solid_fuel','Solid Fuel'),
                                            ('liquid_fuel','Liquid Fuel'),],
                                 )
-    max_ocupation = fields.Integer(default=2, string='Max Number of Tripulants')
+    max_ocupation = fields.Integer(default=2, string='Max Crew')
