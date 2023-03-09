@@ -40,8 +40,8 @@ class SpaceshipModel(models.Model):
     @api.onchange('model')
     def _check_integer(self):
         for record in self:
-            if len(record.model) <= 2:
+            if record.model and len(record.model) <= 2:
                 raise ValidationError(' "Model" must be larger that 2 character.')
                 
     #@api.depends()
-    #https://www.odoo.com/documentation/16.0/developer/reference/backend/orm.html?highlight=api%20depends#odoo.api.depends
+    #

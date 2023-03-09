@@ -40,7 +40,7 @@ class SpaceshipModel(models.Model):
     @api.onchange('model')
     def _check_integer(self):
         for record in self:
-            if len(record.model) <= 2:
+            if record.model and len(record.model) <= 2:
                 raise ValidationError(' "Model" must be larger that 2 character.')
                 
     #@api.depends()
