@@ -44,4 +44,4 @@ class SpaceshipModel(models.Model):
                 raise ValidationError(' "Model" must be larger that 2 character.')
                 
     #@api.depends()
-    #https://www.odoo.com/documentation/16.0/developer/reference/backend/orm.html?highlight=api%20depends#odoo.api.depends
+    #

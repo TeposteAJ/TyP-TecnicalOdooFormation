@@ -1,5 +1,5 @@
-
 <?xml version="1.0" encoding="utf-8"?>
+
 <odoo>
     <data noupdate="1">
         <record model="spacial_mision.spaceship" id="sps_001">
@@ -33,7 +33,7 @@
         </record>
         
         <record id="base.user_admin" model="res.users">
-            <field name="groups_id" eval="[Command.link(ref('model_spacial_mision_spaceship.group_space_admin'))]"/>
+            <field name="groups_id" eval="[Command.link(ref('spacial_mision.group_space_admin'))]"/>
         </record>
         
     </data>

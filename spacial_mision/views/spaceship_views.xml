@@ -80,24 +80,21 @@
                     <field name="type"/>
                     <field name="chaptain"/>
                     
-                    <group>
-                        <field name="type"/>
-                        <field name="model"/>
-                    </group>
-                    
                     <group expand="0" string="Group By">
-                        <filter name="type" string="Type Spaceship"
+                        <filter string="Type Spaceship" name="type" 
                                 domain="[]" context="{'group by': 'type'}"/>
+                        <filter string="Model Spaceship" name="model"
+                                domain="[]" context="{'group_by': 'model'}"/>
                     </group>
                            
                     
                     <filter string="Active Spaceship" name="active"
                             domain="[('active', '=', True)]" context="{'active': 'True'}"/> 
                     
-                    <filter string="Build Date" name="build_date"
-                            domain="[('build_date', '=', 3/7/2023)]"/> 
+                    <filter string="Build Date" name="build_date" 
+                            domain="[]"/> 
                     
-                    
+                 <!-- Como sacar la sintaís de un domain Seetings/Technical/User-definded Filters/New  (en debugmode) -->
                 </search>
             </field>
         </record>
