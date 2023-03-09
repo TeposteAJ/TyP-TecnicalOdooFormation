@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from odoo.exceptions import UserError, ValidationError
 
 class SpaceshipModel(models.Model):
 
@@ -28,3 +29,19 @@ class SpaceshipModel(models.Model):
                                            ('liquid_fuel','Liquid Fuel'),],
                                 )
     max_ocupation = fields.Integer(default=2, string='Max Crew')
+    
+    @api.constrains('length','width')
+    def _check_size(self):
+        for record in self:
+            if record.width > record.length:
+                raise UserError('"Spaceship Width" cannot be larger that "Spaceship Length".')
+                
+    
+    @api.onchange('model')
+    def _check_integer(self):
+        for record in self:
+            if len(record.model) <= 2:
+                raise ValidationError(' "Model" must be larger that 2 character.')
+                
+    #@api.depends()
+    #https://www.odoo.com/documentation/16.0/developer/reference/backend/orm.html?highlight=api%20depends#odoo.api.depends

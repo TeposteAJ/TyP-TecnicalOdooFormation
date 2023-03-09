@@ -85,8 +85,18 @@
                         <field name="model"/>
                     </group>
                     
+                    <group expand="0" string="Group By">
+                        <filter name="type" string="Type Spaceship"
+                                domain="[]" context="{'group by': 'type'}"/>
+                    </group>
+                           
+                    
                     <filter string="Active Spaceship" name="active"
                             domain="[('active', '=', True)]" context="{'active': 'True'}"/> 
+                    
+                    <filter string="Build Date" name="build_date"
+                            domain="[('build_date', '=', 3/7/2023)]"/> 
+                    
                     
                 </search>
             </field>
