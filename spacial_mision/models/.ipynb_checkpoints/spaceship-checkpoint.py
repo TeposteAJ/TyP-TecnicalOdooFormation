@@ -15,7 +15,6 @@ class SpaceshipModel(models.Model):
                                        ('transport', 'Transport'),
                                        ('scout_ship', 'Scout ship'),
                                        ('fighter','Fighter'),],
-                            copy=False,
                             )
     model = fields.Char(string='Model', required=True, index=True)
     build_date = fields.Date(string='Build date')
