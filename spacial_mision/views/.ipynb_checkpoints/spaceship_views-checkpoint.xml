@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<!-- Views -->
+<!-- Spaceship Views -->
 <odoo>
     <data>
         <record model="ir.ui.view" id="spaceship_view_form">

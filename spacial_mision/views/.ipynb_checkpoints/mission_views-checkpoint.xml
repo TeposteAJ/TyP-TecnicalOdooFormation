@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Mission Views -->
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="mission_view_form">
+            <field name="name">spacial_mision.mission.form</field>
+            <field name="model">spacial_mision.mission</field>
+            <field name="arch" type="xml">
+                 <form string="Mission Form">
+                     
+                     <header></header>
+                     
+                     <sheet>
+                         <h1><field name="name"/></h1>
+                         <h3><field name="mission_id"/></h3>
+                         
+                         
+                         <group>
+                             <group>
+                                 <separator string="Mission Objetive" colspan="2"/>
+                                 <field name="goal"/>
+                             </group>
+                             
+                             <group>
+                                 <separator string="General Dates" colspan="2"/>
+                                 <field name="type"/>
+                                 <field name="days"/>
+                                 <field name="active"/>
+                             </group>
+                         </group>
+                         
+                         
+                         <notebook>
+                            <page string="Specs">
+                                <group>
+                                    <group>
+                                        <separator string="Mission Dates"/>
+                                        <field name="launch_date"/>
+                                        <field name="return_date"/>
+                                    </group>
+                                    
+                                    <group>
+                                        <separator string="SpaceShip Dates"/>
+                                        <field name="spaceship_id"/>
+                                        <field name="model"/>
+                                    </group>
+
+                                </group>
+                            </page>
+                             
+                            <page string="Crew">
+                                <separator string="Mission Manager"/>
+                                <field name="captain"/>
+                                
+                                <separator string="Mission Members"/>
+                                <field name="crew_mission"/>
+                            </page>   
+                        </notebook>
+                         
+                     </sheet>
+                    
+                </form>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="mission_view_list">
+            <field name="name">spacial_mision.mission.list</field>
+            <field name="model">spacial_mision.mission</field>
+            <field name="arch" type="xml">
+                <tree string="Mission List">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="captain"/>
+                    <field name="days"/>
+                    <field name="launch_date"/>
+                </tree>
+            </field>
+        </record>
+        
+         <record model="ir.ui.view" id="mission_view_search">
+            <field name="name">spacial_mision.mission.search</field>
+            <field name="model">spacial_mision.mission</field>
+            <field name="arch" type="xml">
+                <search string="Mission Search">
+                    <field name="name"/>
+                    <field name="type"/>
+                    <field name="captain"/>
+                    
+                    <group expand="0" string="Group By">
+                        <filter string="Type Mission" name="type" 
+                                domain="[]" context="{'group_by': 'type'}"/>
+                        
+                        <filter string="Spaceship" name="spaceship"
+                                domain="[]" context="{'group_by': 'spaceship_id'}"/>
+                    </group>
+                    
+                
+                    
+                    <filter string="Active Mission" name="active"
+                            domain="[('active', '=', True)]" context="{'active': 'True'}"/> 
+                    
+                    <filter string="Build Date" name="build_date" 
+                            domain="[]"/> 
+                </search>
+            </field>
+        </record>
+        
+        
+    </data>
+</odoo>

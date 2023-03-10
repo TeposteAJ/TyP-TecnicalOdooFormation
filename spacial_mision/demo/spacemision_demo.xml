@@ -62,7 +62,7 @@
             <field name="name">Caza N-3</field>
             <field name="type">fighter</field>
             <field name="model">XF3001</field>
-            <field name="chaptain">Poe</field>
+            <field name="chaptain">Poe Dameron</field>
             <field name="required_crew">1</field>
             <field name="fuel_type">solid_fuel</field>
             <field name="max_ocupation">1</field>

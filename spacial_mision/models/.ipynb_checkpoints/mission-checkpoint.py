@@ -21,8 +21,8 @@ class Mission(models.Model):
 
     # === Related fields ===
     spaceship_id = fields.Many2one(comodel_name='spacial_mision.spaceship',
-                                   string='Spaceship ID', ondelete='restrict')
-    spaceship = fields.Char(related='spaceship_id.name', string='Spaceship')
+                                   string='Spaceship', ondelete='restrict')
+    model = fields.Char(related='spaceship_id.model', string='Model')
     captain = fields.Char(related='spaceship_id.chaptain', string='Captain')
     
     crew_mission = fields.Many2many(comodel_name='res.partner', 
@@ -35,7 +35,7 @@ class Mission(models.Model):
     # === COMPUTES ===
     def _compute_mission_id(self): 
         for record in self:
-            if record.name:
+            if record.spaceship_id:
                 rand_letters = random.sample(string.ascii_letters, 3)
                 rand_num = random.randint(1000, 9999)
                 id = "".join(rand_letters)  

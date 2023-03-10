@@ -45,4 +45,3 @@ class SpaceshipModel(models.Model):
                 raise ValidationError(' "Model" must be larger that 2 character.')
                 
     #@api.depends()
-    #
