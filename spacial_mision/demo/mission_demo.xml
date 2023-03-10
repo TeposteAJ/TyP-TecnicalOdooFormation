@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    <data noupdate="1">
+        <record model="spacial_mision.mission" id="ms_001">
+            <field name="name">Alpha Moon</field>
+            <field name="type">exploration</field>
+            <field name="goal">Exploring moon superfice. Colecting rocks and testing 
+            new moon's instrument. 
+                Maybe have a good time, eat and fun.
+            </field>
+            <field name="launch_date">2023-02-18</field>
+            <field name="return_date">2023-09-18</field>
+            <field name="mission_id">NULL</field>
+        </record>
+        
+        
+    </data>
+</odoo>
+        
