@@ -28,6 +28,8 @@ class SpaceshipModel(models.Model):
                                            ('liquid_fuel','Liquid Fuel'),],
                                 )
     max_ocupation = fields.Integer(default=2, string='Max Crew')
+    mission_ids = fields.One2many(comodel_name='spacial_mision.mission',
+                                  inverse_name='spaceship_id')
     
     @api.constrains('length','width')
     def _check_size(self):
