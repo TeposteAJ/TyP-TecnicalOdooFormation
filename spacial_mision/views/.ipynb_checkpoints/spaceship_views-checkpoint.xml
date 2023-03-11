@@ -48,6 +48,14 @@
                                     </group>
                                 </group>
                             </page>
+                            
+                            <page string="Missions">
+                                <separator string="Missions Active"/>
+                                <field name="mission_ids"/>
+                                
+                                <separator string="Missions In-Active"/>
+                                <field name="mission_ids"/>
+                            </page>
                         </notebook>
                     </sheet>
                 </form>

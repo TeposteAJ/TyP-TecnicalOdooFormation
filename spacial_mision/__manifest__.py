@@ -7,7 +7,7 @@
     # 'description': """
     #     Library App to manage books and clients, that need help to rent books.
     #     - Clients
-    #     -Books
+    #     - Books
     # """,
     'author': 'Ángela Teposte',
     'website': 'https://github.com/TeposteAJ',
