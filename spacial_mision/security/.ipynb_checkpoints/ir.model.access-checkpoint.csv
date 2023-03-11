@@ -1,7 +1,0 @@
-id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-admin_space,Space Mission Admin,model_spacial_mision_spaceship,group_space_admin,1,1,1,1
-crew_space,Space Mission Crew,model_spacial_mision_spaceship,group_space_crew,1,1,1,0
-user_space,General Space User,model_spacial_mision_spaceship,group_space_user,1,0,0,0
-admin_mission,Mission Admin,model_spacial_mision_mission,group_space_admin,1,1,1,1
-user_mission,General Mission Space User,model_spacial_mision_mission,group_space_user,1,0,0,0
-crew_mission,Crew Mission User,model_spacial_mision_mission,group_space_crew,1,1,0,0
