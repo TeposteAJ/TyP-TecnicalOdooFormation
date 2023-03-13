@@ -21,14 +21,14 @@ class Mission(models.Model):
     
 
     # === New numerics fields Cost & budgets ===
-    budget_fuel = fields.Float(string='Fuel')
-    budget_supplies = fields.Float(string='Supplies')
-    budget_staff = fields.Float(string='Staff Cost')
-    budget_crew = fields.Float(string='Crew Cost')
+    budget_fuel = fields.Float(string='Fuel', default=0.00)
+    budget_supplies = fields.Float(string='Supplies', default=0.00)
+    budget_staff = fields.Float(string='Staff Cost', default=0.00)
+    budget_crew = fields.Float(string='Crew Cost', default=0.00)
     
-    budget_initial = fields.Float(currency_field='currency_id', string='Mission Budget')
-    cost = fields.Float(currency_field='currency_id', string='Actually Total Cost')
-    budget_emergency = fields.Float(currency_field='currency_id', string='Emergency Fonds')
+    budget_initial = fields.Float(string='Mission Budget', default=0.00)
+    cost = fields.Float(string='Actually Total Cost', default=0.00)
+    budget_emergency = fields.Float(string='Emergency Fonds')
 
     # === Related fields ===
     spaceship_id = fields.Many2one(comodel_name='spacial_mission.spaceship',
@@ -38,6 +38,10 @@ class Mission(models.Model):
     
     crew_mission = fields.Many2many(comodel_name='res.partner', 
                                     string='Crew Members')
+    
+    project_ids = fields.One2many(comodel_name='project.project',
+                                  inverse_name='mission_id')
+    
     
     # === Computed fields ===
     mission_id = fields.Char(compute='_compute_mission_id', string='Mission ID')
