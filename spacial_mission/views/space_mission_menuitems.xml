@@ -6,7 +6,7 @@
         <record model="ir.actions.act_window" id="spaceship_list_action">
             <field name="name">Spaceship</field>
             <field name="res_model">spacial_mission.spaceship</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,graph,pivot</field>
             <field name="help" type="html">
                 <p class="o_view_nocontent_smiling_face">
                     Create the first Spaceship
@@ -17,7 +17,7 @@
         <record model="ir.actions.act_window" id="mission_list_action">
             <field name="name">Mission</field>
             <field name="res_model">spacial_mission.mission</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form,calendar,pivot,gantt,graph</field>
             <field name="help" type="html">
                 <p class="o_view_noncontent_similing_face">
                     Create the first Mission
@@ -30,7 +30,7 @@
                   web_icon="spacial_mission,static/description/mission.png"
                   sequence="1"/>
         
-        <menuitem id="menu_space_sub" name="Odoo Space Mision" parent="menu_space" sequence="2"/>
+        <menuitem id="menu_space_sub" name="Odoo Space Mission" parent="menu_space" sequence="2"/>
         
         <menuitem id="menu_space_spaceship" name="Spaceship" parent="menu_space_sub" sequence="3"
                   action="spaceship_list_action"/>

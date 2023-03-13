@@ -18,6 +18,17 @@ class Mission(models.Model):
     goal = fields.Text(string='Description')
     launch_date = fields.Date(string='Launch date')
     return_date = fields.Date(string='Return date')
+    
+
+    # === New numerics fields Cost & budgets ===
+    budget_fuel = fields.Float(string='Fuel')
+    budget_supplies = fields.Float(string='Supplies')
+    budget_staff = fields.Float(string='Staff Cost')
+    budget_crew = fields.Float(string='Crew Cost')
+    
+    budget_initial = fields.Float(currency_field='currency_id', string='Mission Budget')
+    cost = fields.Float(currency_field='currency_id', string='Actually Total Cost')
+    budget_emergency = fields.Float(currency_field='currency_id', string='Emergency Fonds')
 
     # === Related fields ===
     spaceship_id = fields.Many2one(comodel_name='spacial_mission.spaceship',
@@ -35,7 +46,7 @@ class Mission(models.Model):
     # === COMPUTES ===
     def _compute_mission_id(self): 
         for record in self:
-            if record.spaceship_id:
+            if record.name:
                 rand_letters = random.sample(string.ascii_letters, 3)
                 rand_num = random.randint(1000, 9999)
                 id = "".join(rand_letters)  
@@ -45,5 +56,10 @@ class Mission(models.Model):
     @api.depends('launch_date', 'return_date')           
     def _compute_days(self):
         for record in self:
-            record.days = record.return_date - record.launch_date
+            #record.days = '100'
+            if record.return_date and record.launch_date is not None:
+                record.days = str(record.return_date - record.launch_date)
+            else:
+                record.days = '0 days'
+                #Si no agrego este else, me da error al tratar de grabar la info.
         

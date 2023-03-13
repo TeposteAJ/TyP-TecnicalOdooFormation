@@ -12,6 +12,58 @@
             <field name="launch_date">2023-02-18</field>
             <field name="return_date">2023-09-18</field>
             <field name="mission_id">NULL</field>
+            <field name="spaceship_id">1</field>
+            
+            <field name="budget_fuel">53000000</field>
+            <field name="budget_supplies">3000000</field>
+            <field name="budget_staff">217000000</field>
+            <field name="budget_crew">560000000</field>
+            <field name="budget_initial">900000000</field>
+            <field name="cost">833000000</field>
+            <field name="budget_emergency">200000000</field>
+
+        </record>
+
+        <record model="spacial_mission.mission" id="ms_002">
+            <field name="name">Beta Moon</field>
+            <field name="type">exploration</field>
+            <field name="goal">Exploring moon superfice for second time. 
+                 Colecting more rocks and testing same moon's instrument. 
+                Maybe have a regular time, eat and back.
+            </field>
+            <field name="launch_date">2023-12-01</field>
+            <field name="return_date">2024-04-20</field>
+            <field name="mission_id">NULL</field>
+            <field name="spaceship_id">4</field>
+            
+            <field name="budget_fuel">68000000</field>
+            <field name="budget_supplies">3500000</field>
+            <field name="budget_staff">200000000</field>
+            <field name="budget_crew">520000000</field>
+            <field name="budget_initial">1000000000</field>
+            <field name="cost">791500000</field>
+            <field name="budget_emergency">250000000</field>
+        </record>
+        
+        
+        <record model="spacial_mission.mission" id="ms_003">
+            <field name="name">Pre Moon</field>
+            <field name="type">urgent</field>
+            <field name="goal">Exploring environment and test spaceship. 
+                Take photo for the earth, derrocate the terraplanist current.
+            </field>
+            <field name="launch_date">2023-03-10</field>
+            <field name="return_date">2023-11-26</field>
+            <field name="mission_id">NULL</field>
+            <field name="spaceship_id">5</field>
+            
+            <field name="budget_fuel">380000000</field>
+            <field name="budget_supplies">1000000</field>
+            <field name="budget_staff">50000000</field>
+            <field name="budget_crew">78000000</field>
+            <field name="budget_initial">3000000</field>
+            <field name="cost">509000000</field>
+            <field name="budget_emergency">2000000</field>
         </record>
         
         

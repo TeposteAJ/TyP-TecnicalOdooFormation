@@ -56,6 +56,27 @@
                                 <separator string="Mission Members"/>
                                 <field name="crew_mission"/>
                             </page>   
+                             
+                             <page string="Cost &amp; Budgets">
+                                 <group>
+                                    <group>
+                                         <separator string="General"/>
+                                         <field name="budget_initial"/>
+                                         <field name="cost"/>
+                                         <field name="budget_emergency"/>
+                                    </group> 
+                                     
+                                    <group>
+                                        <separator string="Detail Budget"/>
+                                        <field name="budget_fuel"/>
+                                        <field name="budget_supplies"/>
+                                        <field name="budget_staff"/>
+                                        <field name="budget_crew"/>
+                                    </group> 
+                                  </group>
+
+                            </page>   
+                             
                         </notebook>
                          
                      </sheet>
@@ -106,6 +127,79 @@
             </field>
         </record>
         
+        <record model="ir.ui.view" id="mission_view_pivot">
+            <field name="name">spacial_mission.mission.pivot</field>
+            <field name="model">spacial_mission.mission</field>
+            <field name="arch" type="xml">
+                <pivot>
+                    <field name="type" type="row"/>
+                    <field name="name" type="row"/>
+                    <field name="cost" type="measure"/>
+                    <field name="budget_fuel" type="measure"/>
+                    <field name="budget_supplies" type="measure"/>
+                    <field name="budget_staff" type="measure"/>
+                    <field name="budget_crew" type="measure"/>
+                    
+                    <field name="budget_initial" type="measure"/>
+                    <field name="budget_emergency" type="measure"/>
+                  
+                </pivot>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="mission_view_calendar">
+            <field name="name">spacial_mission.mission.calendar</field>
+            <field name="model">spacial_mission.mission</field>
+            <field name="arch" type="xml">
+                <calendar string="Mission Calendar"
+                          date_start="launch_date"
+                          date_stop="return_date"
+                          color="name"
+                          mode="year">
+                    
+                    <field name="type"/>
+                    <field name="captain"/>
+                  
+                </calendar>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="mission_view_gantt">
+            <field name="name">spacial_mission.mission.gantt</field>
+            <field name="model">spacial_mission.mission</field>
+            <field name="arch" type="xml">
+                <gantt string="Mission Gantt"
+                          date_start="launch_date"
+                          date_stop="return_date"
+                          progress_bar="type"
+                          scales="week,month,year">
+                    
+                    <templates>
+                        <div t-name="gantt-popover">
+                            <!-- Gantt Popover Template -->
+                        </div>
+                    </templates>
+                  
+                </gantt>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="mission_view_graph">
+            <field name="name">spacial_mission.mission.graph</field>
+            <field name="model">spacial_mission.mission</field>
+            <field name="arch" type="xml">
+                <graph string="Mission Graph" sample="1" >
+                    <field name="cost" type="measure" string="Mission Cost"/>
+                    <field name="budget_fuel" type="measure"/>
+                    <field name="budget_supplies" type="measure" />
+                    <field name="type" invisible="1"/>
+                    <field name="name"/>
+                  
+                </graph>
+                
+                
+            </field>
+        </record>
         
     </data>
 </odoo>

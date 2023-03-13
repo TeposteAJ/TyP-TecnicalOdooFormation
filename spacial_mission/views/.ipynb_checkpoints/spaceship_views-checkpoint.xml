@@ -109,6 +109,40 @@
             </field>
         </record>
         
+        
+        <record model="ir.ui.view" id="spaceship_view_pivot">
+            <field name="name">spacial_mission.spaceship.pivot</field>
+            <field name="model">spacial_mission.spaceship</field>
+            <field name="arch" type="xml">
+                <pivot>
+                    <field name="type" type="row"/>
+                    <field name="name" type="row"/>
+                    <field name="max_ocupation" type="measure"/>
+                    <field name="required_crew" type="measure"/>
+                    
+                </pivot>
+            </field>
+        </record>
+        
+        <record model="ir.ui.view" id="spaceship_view_graph">
+            <field name="name">spacial_mission.spaceship.graph</field>
+            <field name="model">spacial_mission.spaceship</field>
+            <field name="arch" type="xml">
+                <graph string="Spaceship Graph" sample="1" >
+                    <field name="length" type="measure" string="Length"/>
+                    <field name="width" type="measure" string="Width"/>
+                    <field name="max_ocupation" type="measure" />
+                    <field name="required_crew" type="measure" />
+                    <field name="type" invisible="1"/>
+                    <field name="name"/>
+                  
+                </graph>
+                
+                
+            </field>
+        </record>
+        
+        
     </data>
     
 </odoo>
