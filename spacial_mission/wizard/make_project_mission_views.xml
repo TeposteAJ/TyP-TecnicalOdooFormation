@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Views- Menu Spacial Mission -->
+<odoo>
+
+        
+        <record model="ir.ui.view" id="action_view_project_mission">
+            <field name='name'>spacial_mission.project.wizard.form</field>
+            <field name='model'>spacial_mission.project.wizard</field>
+            <field name='arch' type='xml'>
+                <form string='Create Project from Mission'>
+                    <group>
+                        <field name="mission_id"/>
+                        <field name="name"/>
+                        <field name="active"/>
+                        <field name="description"/>
+                        <field name="label_tasks"/>
+                        <field name="user_id"/>
+                        <field name="date_start"/>
+                        <field name="is_favorite"/>
+                        <field name="privacy_visibility"/>
+                        <field name="collaborator_ids"/>
+                        <field name="collaborator_count"/>
+                    </group>
+                    <footer>
+                        <button name="create_project" type="object"
+                                string="Create" class="oe_highlight"/>
+                        <button special='cancel' string="Cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        
+        
+        <record id="launch_project_window"
+                model='ir.actions.act_window'>
+            <field name="name">Create-Project</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">spacial_mission.project.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="binding_model_id" ref="spacial_mission.model_spacial_mission_mission"/>
+            <field name="target">new</field>
+            <!-- field name="binding_view_types">list</field -->
+        </record>
+ 
+</odoo>

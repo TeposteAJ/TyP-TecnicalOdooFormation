@@ -5,3 +5,6 @@ user_space,General Space User,model_spacial_mission_spaceship,group_space_user,1
 admin_mission,Mission Admin,model_spacial_mission_mission,group_space_admin,1,1,1,1
 user_mission,General Mission Space User,model_spacial_mission_mission,group_space_user,1,0,0,0
 crew_mission,Crew Mission User,model_spacial_mission_mission,group_space_crew,1,1,0,0
+admin_project_mission,Add Project Admin,model_spacial_mission_project_wizard,group_space_admin,1,1,1,1
+crew_project_mission,Add Project Crew,model_spacial_mission_project_wizard,group_space_crew,1,1,1,0
+user_project_mission,Add Project User,model_spacial_mission_project_wizard,group_space_crew,1,0,0,0
