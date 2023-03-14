@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Views Inherit Project -->
+<odoo>
+    <record model="ir.ui.view" id="view_project_list_inherit_spacial_mission">
+        <field name="name">project.project.list.inherit.spacial_mission</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="before">
+                <field name="mission_id" />
+            </field>
+        </field>
+    </record>
+    
+    <record model="ir.ui.view" id="view_project_form_inherit_spacial_mission">
+        <field name="name">project.project.form.inherit.spacial_mission</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <field name="partner_id" position="before">
+                <field name="mission_id" />
+            </field>
+        </field>
+    </record>
+
+    
+    <record model="ir.ui.view" id="view_project_kanban_inherit_spacial_mission">
+        <field name="name">project.project.kanban.inherit.spacial_mission</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.view_project_kanban"/>
+        <field name="arch" type="xml">
+           <field name="last_update_status" position="before">
+                <field name="mission_id" />
+            </field>
+        </field>
+    </record>
+</odoo>
+
+<!---
+ <xpath expr='//div[@name="oe_kanban_bottom_right"' position="after">
+                <field name="mission_id" />
+            </xpath>
+name="last_update_status"
+
+-->

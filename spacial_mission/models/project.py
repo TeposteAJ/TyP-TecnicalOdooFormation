@@ -8,4 +8,4 @@ class Project(models.Model):
     
     #New field
     mission_id = fields.Many2one(comodel_name='spacial_mission.mission',
-                                string='Related Mission', ondelete='cascade')
+                                string='Related Mission')

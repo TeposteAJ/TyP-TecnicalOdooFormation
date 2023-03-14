@@ -76,6 +76,12 @@
                                   </group>
 
                             </page>   
+                            
+                            <page string="Projects">
+                                <separator string="Task "/>
+                                <field name="project_ids"/>
+
+                            </page>  
                              
                         </notebook>
                          
@@ -95,6 +101,7 @@
                     <field name="captain"/>
                     <field name="days"/>
                     <field name="launch_date"/>
+                    <field name="project_ids"/>
                 </tree>
             </field>
         </record>
