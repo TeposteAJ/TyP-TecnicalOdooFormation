@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Report Mission qWeb -->
+<odoo>
+    <record id='report_mission' model="ir.actions.report">
+        <field name="name">Mission Report</field>
+        <field name="model">spacial_mission.mission</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">spacial_mission.report_mission_document</field>
+        <field name="report_file">spacial_mission.report_mission</field>
+        <field name="binding_model_id" ref="spacial_mission.model_spacial_mission_mission"/>
+        <field name="binding_type">report</field>
+    </record>
+    
+    <template id="report_mission_document">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name" class="mt16"/>
+                        <div class="row mt32 mb32" id="mission_info">
+                            <h5>Mission Duration:  </h5>
+                            <!-- h5>Mission Duration: &#9718; </h5-->
+                             <div t-if="doc.launch_date" class="col-auto mw-100 mb-2">
+                                <span t-field="doc.launch_date"/>
+                                <strong> to </strong>
+                                <span t-field="doc.return_date"/>
+                            </div>
+                            <div t-if="doc.days" class="col-auto mw-100 mb-2">
+                                <strong>Total time:</strong>
+                                <span t-field="doc.days"/>
+                            </div>
+                            
+                            
+                            <h5>General:</h5>
+                            <div t-if="doc.captain" class="col-auto mw-100 mb-2">
+                                <strong>Captain:</strong>
+                                <!--strong>Captain: &#9872; </strong -->
+                                <span t-field="doc.captain"/>
+                            </div>
+                            <div t-if="doc.name" class="col-auto mw-100 mb-2">
+                                <strong> Mission:</strong>
+                                <!-- strong>&#9689; Mission:</strong-->
+                                <span t-field="doc.name"/>
+                            </div>
+                             <div t-if="doc.mission_id" class="col-auto mw-100 mb-2">
+                                <strong>ID:</strong>
+                                <span t-field="doc.mission_id"/>
+                            </div>
+                       
+                            
+                        </div>
+                        <h3>Crew</h3>
+                        <table class="table table-sm o_main_table">
+                            <thead>
+                                <tr>
+                                    <th name="th_name">Name</th>
+                                    <th name="th_email">Email</th>
+                                    <th name="th_phone">Phone</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="doc.crew_mission" t-as="crew">
+                                    <tr>
+                                        <td t-if="crew.name" name="td_name">
+                                            <span t-field="crew.name"/>
+                                        </td>
+                                        <td t-if="crew.email" name="td_email">
+                                            <span t-field="crew.email"/>
+                                        </td>
+                                        <td t-if="crew.phone" name="td_phone">
+                                            <span t-field="crew.phone"/>
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+                        
+            
+        </t>
+    </template>
+
+    
+</odoo>

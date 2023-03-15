@@ -48,7 +48,7 @@ class Mission(models.Model):
     
     crew_mission = fields.Many2many(comodel_name='res.partner', 
                                     string='Crew Members')
-    
+    #Corregir esto no puede llamarse crew_mission es un many2many debe ser algo como crew_ids
     project_ids = fields.One2many(comodel_name='project.project',
                                   inverse_name='mission_id')
     

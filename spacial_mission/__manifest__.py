@@ -23,6 +23,7 @@
         'views/mission_views.xml',
         'views/project_views_inherit.xml',
         'wizard/make_project_mission_views.xml',
+        'report/mission_report_template.xml',
     ],
     'demo': [
         'demo/spaceship_demo.xml',
