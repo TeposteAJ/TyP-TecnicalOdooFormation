@@ -18,7 +18,7 @@ class SpaceshipModel(models.Model):
                             )
     model = fields.Char(string='Model', required=True, index=True)
     build_date = fields.Date(string='Build date')
-    chaptain = fields.Char(string='Captain', required=True, index=True)
+    captain = fields.Char(string='Captain', required=True, index=True)
     required_crew = fields.Integer(default=0, required=True, string='Required Crew')
     length = fields.Float(default=0, string='Spaceship Length [meters]')
     width = fields.Float(default=0, string='Spaceship Width [meters]')

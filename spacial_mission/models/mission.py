@@ -8,6 +8,16 @@ class Mission(models.Model):
     _name = 'spacial_mission.mission'
     _description = 'Mission Info'
     
+    
+    def _default_mission_id(self):
+        rand_letters = random.sample(string.ascii_letters, 3)
+        rand_num = random.randint(1000, 9999)
+        id = "".join(rand_letters)  
+        id = id + str(rand_num)
+        return id
+    
+                        
+    mission_id = fields.Char(string='Mission ID',default=_default_mission_id)
     name = fields.Char(string='Title', required=True, index=True)
     active = fields.Boolean(default=True)
     type = fields.Selection(string='Category',
@@ -34,7 +44,7 @@ class Mission(models.Model):
     spaceship_id = fields.Many2one(comodel_name='spacial_mission.spaceship',
                                    string='Spaceship', ondelete='restrict')
     model = fields.Char(related='spaceship_id.model', string='Model')
-    captain = fields.Char(related='spaceship_id.chaptain', string='Captain')
+    captain = fields.Char(related='spaceship_id.captain', string='Captain')
     
     crew_mission = fields.Many2many(comodel_name='res.partner', 
                                     string='Crew Members')
@@ -44,18 +54,19 @@ class Mission(models.Model):
     
     
     # === Computed fields ===
-    mission_id = fields.Char(compute='_compute_mission_id', string='Mission ID')
+   
     days = fields.Char(compute='_compute_days', string='Durations days')
     
     # === COMPUTES ===
-    def _compute_mission_id(self): 
-        for record in self:
-            if record.name:
-                rand_letters = random.sample(string.ascii_letters, 3)
-                rand_num = random.randint(1000, 9999)
-                id = "".join(rand_letters)  
-                id = id + str(rand_num)
-                record.mission_id = id
+   #def _compute_mission_id(self): 
+    #    for record in self:
+     #       if record.name:
+      #          rand_letters = random.sample(string.ascii_letters, 3)
+       #         rand_num = random.randint(1000, 9999)
+        #        id = "".join(rand_letters)  
+         #       id = id + str(rand_num)
+          #      record.mission_id = id
+                
                 
     @api.depends('launch_date', 'return_date')           
     def _compute_days(self):

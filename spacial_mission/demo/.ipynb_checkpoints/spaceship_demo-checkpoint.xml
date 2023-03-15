@@ -6,7 +6,7 @@
             <field name="name">XL-15</field>
             <field name="type">transport</field>
             <field name="model">SQ12KJ98</field>
-            <field name="chaptain">Buzz LightYear</field>
+            <field name="captain">Buzz LightYear</field>
             <field name="required_crew">2</field>
             <field name="fuel_type">liquid_fuel</field>
             <field name="max_ocupation">36</field>
@@ -20,7 +20,7 @@
             <field name="name">TIE avanzado X1 experimental</field>
             <field name="type">transport</field>
             <field name="model">DV-001-X</field>
-            <field name="chaptain">Darth Vader</field>
+            <field name="captain">Darth Vader</field>
             <field name="required_crew">5</field>
             <field name="fuel_type">solid_fuel</field>
             <field name="max_ocupation">90</field>
@@ -34,7 +34,7 @@
             <field name="name">Caza N-1</field>
             <field name="type">fighter</field>
             <field name="model">XF3001</field>
-            <field name="chaptain">Annakin Skywalker</field>
+            <field name="captain">Annakin Skywalker</field>
             <field name="required_crew">1</field>
             <field name="fuel_type">solid_fuel</field>
             <field name="max_ocupation">1</field>
@@ -48,7 +48,7 @@
             <field name="name">Millennium Falcon</field>
             <field name="type">fighter</field>
             <field name="model">R56-002</field>
-            <field name="chaptain">Han Solo</field>
+            <field name="captain">Han Solo</field>
             <field name="required_crew">1</field>
             <field name="fuel_type">liquid_fuel</field>
             <field name="max_ocupation">15</field>
@@ -62,7 +62,7 @@
             <field name="name">Caza N-3</field>
             <field name="type">fighter</field>
             <field name="model">XF3001</field>
-            <field name="chaptain">Poe Dameron</field>
+            <field name="captain">Poe Dameron</field>
             <field name="required_crew">1</field>
             <field name="fuel_type">solid_fuel</field>
             <field name="max_ocupation">1</field>
@@ -76,7 +76,7 @@
             <field name="name">Caza N-1A</field>
             <field name="type">fighter</field>
             <field name="model">XF3001</field>
-            <field name="chaptain">Por definir</field>
+            <field name="captain">Por definir</field>
             <field name="required_crew">1</field>
             <field name="fuel_type">solid_fuel</field>
             <field name="max_ocupation">1</field>

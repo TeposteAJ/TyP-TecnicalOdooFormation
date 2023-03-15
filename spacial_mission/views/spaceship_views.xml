@@ -16,7 +16,7 @@
                         <group>
                             <group>
                                 <separator string="Crew" colspan="2"/>
-                                <field name="chaptain"/>
+                                <field name="captain"/>
                                 <field name="required_crew"/>
                                 <field name="max_ocupation"/>
                             </group>
@@ -71,7 +71,7 @@
                     <field name="name"/>
                     <field name="model"/>
                     <field name="type"/>
-                    <field name="chaptain"/>
+                    <field name="captain"/>
                     <field name="fuel_type"/>
                     <field name="build_date"/>
                 </tree>
@@ -86,7 +86,7 @@
                 <search string="Spaceship Search">
                     <field name="name"/>
                     <field name="type"/>
-                    <field name="chaptain"/>
+                    <field name="captain"/>
                     
                     <group expand="0" string="Group By">
                         <filter string="Type Spaceship" name="type" 
