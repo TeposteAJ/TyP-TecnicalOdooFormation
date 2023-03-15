@@ -32,7 +32,19 @@ class ProjectWizard(models.TransientModel):
     
     
     def create_project(self):
-        pass
+        project_id = self.env['project.project'].create({
+            'mission_id': self.mission_id.id,
+            'name': self.name,
+            'description': self.description,
+            'active': self.active,
+            'label_task': self.label_task,
+            'user_id': self.user_id.id,
+            'date_start': self.date_start,
+            'is_favorite': self.is_favorite,
+            'privacy_visibility': self.privacy_visibility,
+            'collaborator_ids': self.collaborator_ids,
+            'collaborator_count': self.collaborator_count,
+        })
         #mission_active = self.env['spacial_mission.mission'].search([("active", "=", True)], limit = 1)
         #is mission_active:
          #   project_id = self.env['project.project'].create({

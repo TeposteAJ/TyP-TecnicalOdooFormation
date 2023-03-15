@@ -1,0 +1,5 @@
+
+  <!-- Explorar esto https://www.odoo.com/documentation/16.0/developer/tutorials/getting_started/10_actions.html 
+ : button type="action" name="%(test.test_model_action)d" string="My Action"/
+  spacial_mission.launch_project_window   <-- identificador externo
+  -->

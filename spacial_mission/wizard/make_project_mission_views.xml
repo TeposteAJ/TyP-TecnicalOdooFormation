@@ -9,19 +9,38 @@
             <field name='model'>spacial_mission.project.wizard</field>
             <field name='arch' type='xml'>
                 <form string='Create Project from Mission'>
+                    <header></header>
+                    <sheet>
+                         <h2><field name="name"/></h2>
+               
                     <group>
-                        <field name="mission_id"/>
-                        <field name="name"/>
-                        <field name="active"/>
-                        <field name="description"/>
-                        <field name="label_tasks"/>
+                        <group>
+                        <separator string="General" colspan="2"/>
                         <field name="user_id"/>
-                        <field name="date_start"/>
+                        <field name="mission_id"/>
                         <field name="is_favorite"/>
-                        <field name="privacy_visibility"/>
-                        <field name="collaborator_ids"/>
                         <field name="collaborator_count"/>
-                    </group>
+                        </group>
+                        
+                        <group>
+                        <separator string="Details" colspan="2"/>
+                        <field name="active"/>
+                        <field name="label_tasks"/>
+                        <field name="date_start"/>
+                        <field name="privacy_visibility"/>
+                        </group>
+                     </group>
+                        
+                        <notebook>
+                            <page string="Description">
+                                <field name="description"/>
+                            </page>
+                            <page string="Collaborator">
+                                <field name="collaborator_ids"/>
+                            </page>
+                        </notebook>
+    
+                    </sheet>
                     <footer>
                         <button name="create_project" type="object"
                                 string="Create" class="oe_highlight"/>
@@ -40,7 +59,7 @@
             <field name="view_mode">form</field>
             <field name="binding_model_id" ref="spacial_mission.model_spacial_mission_mission"/>
             <field name="target">new</field>
-            <!-- field name="binding_view_types">list</field -->
+            <!-- archivoaparte .txt que debe¡o explorar-->
         </record>
  
 </odoo>
