@@ -16,7 +16,7 @@
                         </h3>
                         
                         <p> Description:
-                        <span t-field="mission.description"/>
+                        <span t-field="mission.goal"/>
                         </p>
                         
                         <p>Type:
@@ -50,7 +50,7 @@
                 <t t-set="title">Project</t>
                 <div class="oe_structure">
                     <div class="container">
-                        
+                        <t t-foreach="missionp.project_ids" t-as="project">
                         <h3 t-field="project.name"/>
                         <p>Last Modified:
                             <i t-field="project.write_date" t-field-options='{"format": "long"}'/>
@@ -66,9 +66,10 @@
                                 </li>
                             </t>
                         </ul>
-                        
+                        </t>
                     </div>
                 </div>
+                    
             </t>
             
         </template>
