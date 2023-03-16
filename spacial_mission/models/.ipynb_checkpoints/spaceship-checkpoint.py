@@ -44,4 +44,19 @@ class SpaceshipModel(models.Model):
             if record.model and len(record.model) <= 2:
                 raise ValidationError(' "Model" must be larger that 2 character.')
                 
-    #@api.depends()
+    """
+    def create_spaceship(self):
+        spaceship_id = self.env['spacial_mission.spaceship'].create({
+            'name': self.name,
+            'type': self.type,
+            'active': self.active,
+            'model': self.model,
+            'captain': self.captain,
+            'required_crew': self.required_crew,
+            'is_favorite': self.is_favorite,
+            'privacy_visibility': self.privacy_visibility,
+            'collaborator_ids': self.collaborator_ids,
+            'collaborator_count': self.collaborator_count,
+        }) 
+        
+     """
