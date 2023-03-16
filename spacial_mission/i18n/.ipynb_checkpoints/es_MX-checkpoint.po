@@ -1,0 +1,722 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* spacial_mission
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 18:48+0000\n"
+"PO-Revision-Date: 2023-03-16 18:48+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: spacial_mission
+#: model:res.groups,comment:spacial_mission.group_space_admin
+msgid ""
+" Admin members have all access right.\n"
+"                           Can do all CRUD operations.\n"
+"    "
+msgstr "Los miembros que son Administradores tienen todos los derechos de creación, de registros."
+
+#. module: spacial_mission
+#: model:res.groups,comment:spacial_mission.group_space_crew
+msgid ""
+" Crew members have some access right.\n"
+"                           Can do everything But Delete.\n"
+"    "
+msgstr "Los miembros de la tripulación no tiene derechos de Eliminación de registros."
+
+#. module: spacial_mission
+#: model:res.groups,comment:spacial_mission.group_space_user
+msgid ""
+" General user members have few access right.\n"
+"                           Can only see (read) the information related\n"
+"                           to the Spaceship.\n"
+"    "
+msgstr "Los usuarios generales solo tienen accesos de lectura."
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+msgid "<strong> Mission:</strong>"
+msgstr "<strong> Misión:</strong>"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+msgid "<strong> to </strong>"
+msgstr "<strong> al </strong>"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+msgid "<strong>Captain:</strong>"
+msgstr "<strong>Capitán:</strong>"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+msgid "<strong>ID:</strong>"
+msgstr "<strong>ID:</strong>"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_website
+msgid "<strong>Projects</strong>"
+msgstr "<strong>Proyectos</strong>"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+msgid "<strong>Total time:</strong>"
+msgstr "<strong>Tiempo total:</strong>"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__active
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_search
+msgid "Active Mission"
+msgstr "Misión Activa"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_search
+msgid "Active Spaceship"
+msgstr "Nave Activa"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__cost
+msgid "Actually Total Cost"
+msgstr "Costo Total Actual"
+
+#. module: spacial_mission
+#: model:res.groups,name:spacial_mission.group_space_admin
+msgid "Admin Space Misión"
+msgstr "Administrador de Space Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_search
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_search
+msgid "Build Date"
+msgstr "Fecha de Construcción"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__build_date
+msgid "Build date"
+msgstr "Fecha de Construcción"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.action_view_project_mission
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__captain
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__captain
+msgid "Captain"
+msgstr "Capitán"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__type
+msgid "Category"
+msgstr "Categoría"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__collaborator_ids
+#: model_terms:ir.ui.view,arch_db:spacial_mission.action_view_project_mission
+msgid "Collaborator"
+msgstr "Colaborador"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__collaborator_count
+msgid "Collaborator Count"
+msgstr "Nª Colaboradores"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.project_website
+msgid "Collaborators:"
+msgstr "Colaboradores"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "Cost & Budgets"
+msgstr "Costos y Presupuestos"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.action_view_project_mission
+msgid "Create"
+msgstr "Crear"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.action_view_project_mission
+msgid "Create Project from Mission"
+msgstr "Crear Proyecto para esta Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.actions.act_window,help:spacial_mission.mission_list_action
+msgid "Create the first Mission"
+msgstr "Crea tu primera Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.actions.act_window,help:spacial_mission.spaceship_list_action
+msgid "Create the first Spaceship"
+msgstr "Registra tu primera Nave"
+
+#. module: spacial_mission
+#: model:ir.actions.act_window,name:spacial_mission.launch_project_window
+msgid "Create-Project"
+msgstr "Crear Proyecto"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__create_uid
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__create_uid
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__create_uid
+msgid "Created by"
+msgstr "Creado Por"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__create_date
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__create_date
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
+msgid "Crew"
+msgstr "Tripulación"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__budget_crew
+msgid "Crew Cost"
+msgstr "Asignación para Tripulanción"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__crew_mission
+msgid "Crew Members"
+msgstr "Miembros de Tripulación"
+
+#. module: spacial_mission
+#: model:res.groups,name:spacial_mission.group_space_crew
+msgid "Crew Space Misión"
+msgstr "Miembro de Misión Espacial"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__date_start
+msgid "Date Start"
+msgstr "Fecha de Inicio"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__goal
+#: model_terms:ir.ui.view,arch_db:spacial_mission.action_view_project_mission
+msgid "Description"
+msgstr "Descripción"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_website
+msgid "Description:"
+msgstr "Descripción"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "Detail Budget"
+msgstr "Presupuesto Detallado"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.action_view_project_mission
+msgid "Details"
+msgstr "Detalle"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
+msgid "Dimensions"
+msgstr "Dimensiones"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__display_name
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__display_name
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__display_name
+msgid "Display Name"
+msgstr "Muestra el nombre:"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__days
+msgid "Durations days"
+msgstr "Duración en días"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+msgid "Email"
+msgstr "correo electrónico"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__budget_emergency
+msgid "Emergency Fonds"
+msgstr "Fondos para emergencias"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
+msgid "Engine"
+msgstr ""
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__engine_number
+msgid "Engine Number"
+msgstr ""
+
+#. module: spacial_mission
+#: model:ir.model.fields.selection,name:spacial_mission.selection__spacial_mission_mission__type__exploration
+msgid "Exploration"
+msgstr "Exploración"
+
+#. module: spacial_mission
+#: model:ir.model.fields.selection,name:spacial_mission.selection__spacial_mission_spaceship__type__fighter
+msgid "Fighter"
+msgstr "Lucha"
+
+#. module: spacial_mission
+#: model:ir.model.fields.selection,name:spacial_mission.selection__spacial_mission_mission__type__for_supplies
+msgid "For Supplies"
+msgstr "Viveres"
+
+#. module: spacial_mission
+#: model:ir.model.fields.selection,name:spacial_mission.selection__spacial_mission_spaceship__type__freighter
+msgid "Freighter"
+msgstr ""
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__budget_fuel
+msgid "Fuel"
+msgstr "Combustible"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__fuel_type
+msgid "Fuel Type"
+msgstr "Tipo de combustible"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.action_view_project_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "General"
+msgstr "Generales"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "General Dates"
+msgstr "Datos Generales"
+
+#. module: spacial_mission
+#: model:res.groups,name:spacial_mission.group_space_user
+msgid "General User Space Misión"
+msgstr "Usuario General Space Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+msgid "General:"
+msgstr "General:"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_search
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__id
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__id
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__id
+msgid "ID"
+msgstr "ID"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__is_favorite
+msgid "Is Favorite"
+msgstr "Marcar como Favorito"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__label_tasks
+msgid "Label Tasks"
+msgstr "Etiquetas de Tareas"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission____last_update
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard____last_update
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship____last_update
+msgid "Last Modified on"
+msgstr "Modificado pro última vez en"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.project_website
+msgid "Last Modified:"
+msgstr "Última modoficación"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__write_uid
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__write_uid
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__write_date
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__write_date
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en:"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_website
+msgid "Last modified:"
+msgstr "Última modificación:"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__launch_date
+msgid "Launch date"
+msgstr "Fecha Retorno"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_graph
+msgid "Length"
+msgstr "Longitud"
+
+#. module: spacial_mission
+#: model:ir.model.fields.selection,name:spacial_mission.selection__spacial_mission_spaceship__fuel_type__liquid_fuel
+msgid "Liquid Fuel"
+msgstr "Combustible Líquido"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__max_ocupation
+msgid "Max Crew"
+msgstr "Nª Max. Tripulates"
+
+#. module: spacial_mission
+#: model:ir.actions.act_window,name:spacial_mission.mission_list_action
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__mission_id
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__mission_ids
+#: model:ir.ui.menu,name:spacial_mission.menu_space_mission
+msgid "Mission"
+msgstr "Misión"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__budget_initial
+msgid "Mission Budget"
+msgstr "Presupuesto para la Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_calendar
+msgid "Mission Calendar"
+msgstr "Calendario de Misiones"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_graph
+msgid "Mission Cost"
+msgstr "Costo Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "Mission Dates"
+msgstr "Fechas de Misiones"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+msgid "Mission Duration:"
+msgstr "Duración de la Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "Mission Form"
+msgstr "Formulario para Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_gantt
+msgid "Mission Gantt"
+msgstr "Gantt Misiones"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_graph
+msgid "Mission Graph"
+msgstr "Gráficos de Misiones"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__mission_id
+msgid "Mission ID"
+msgstr "ID Misión"
+
+#. module: spacial_mission
+#: model:ir.model,name:spacial_mission.model_spacial_mission_mission
+msgid "Mission Info"
+msgstr "Información de Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_list
+msgid "Mission List"
+msgstr "Lista de Misiones"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "Mission Manager"
+msgstr "Administrador de la Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "Mission Members"
+msgstr "Miembro de la Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "Mission Objetive"
+msgstr "Meta de la Misión"
+
+#. module: spacial_mission
+#: model:ir.actions.report,name:spacial_mission.report_mission
+msgid "Mission Report"
+msgstr "Reporte de la Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_search
+msgid "Mission Search"
+msgstr "Busqueda Misiones"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.project_website
+msgid "Mission:"
+msgstr "Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_website
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
+msgid "Missions"
+msgstr "Misiones"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
+msgid "Missions Active"
+msgstr ""
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
+msgid "Missions In-Active"
+msgstr ""
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__model
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__model
+msgid "Model"
+msgstr "Modelo"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_search
+msgid "Model Spaceship"
+msgstr "Modelo de Nave"
+
+#. module: spacial_mission
+#: model:ir.ui.menu,name:spacial_mission.menu_space
+msgid "Moon Mission"
+msgstr "Misión Lunar"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+msgid "Name"
+msgstr "Nombre"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_website
+msgid "No Project Currently"
+msgstr "Actualmente, no se encontraron projectos asociados"
+
+#. module: spacial_mission
+#: model:ir.ui.menu,name:spacial_mission.menu_space_sub
+msgid "Odoo Space Mission"
+msgstr "Misión Espacial Odoo"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__privacy_visibility
+msgid "Privacy Visibility"
+msgstr "Visibilidad"
+
+#. module: spacial_mission
+#: model:ir.model,name:spacial_mission.model_project_project
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__project_ids
+#: model_terms:ir.ui.view,arch_db:spacial_mission.project_website
+msgid "Project"
+msgstr "Proyecto"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__description
+msgid "Project Description"
+msgstr "Descripción del proyecto"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__name
+msgid "Project Name"
+msgstr "Nombre del Proyecto"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "Projects"
+msgstr "Proyectos"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_project_project__mission_id
+msgid "Related Mission"
+msgstr "Misiones Relacionadas"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__required_crew
+msgid "Required Crew"
+msgstr "Tripulación requerida"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__return_date
+msgid "Return date"
+msgstr "Fecha de Retorno"
+
+#. module: spacial_mission
+#: model:ir.model.fields.selection,name:spacial_mission.selection__spacial_mission_spaceship__type__scout_ship
+msgid "Scout ship"
+msgstr "Exploración"
+
+#. module: spacial_mission
+#: model:ir.model.fields.selection,name:spacial_mission.selection__spacial_mission_spaceship__fuel_type__solid_fuel
+msgid "Solid Fuel"
+msgstr "Combustible sólido"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "SpaceShip Dates"
+msgstr "Fechas de la Nave"
+
+#. module: spacial_mission
+#: model:ir.actions.act_window,name:spacial_mission.spaceship_list_action
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__spaceship_id
+#: model:ir.ui.menu,name:spacial_mission.menu_space_spaceship
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_search
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
+msgid "Spaceship"
+msgstr "Nave Espacial"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
+msgid "Spaceship Form"
+msgstr "Formulario para Naves"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_graph
+msgid "Spaceship Graph"
+msgstr "Gráficas de Naves"
+
+#. module: spacial_mission
+#: model:ir.model,name:spacial_mission.model_spacial_mission_spaceship
+msgid "Spaceship Info"
+msgstr "Información de la Nave"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__length
+msgid "Spaceship Length [meters]"
+msgstr "Longiutd de Nave [metros]"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_list
+msgid "Spaceship List"
+msgstr ""
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_search
+msgid "Spaceship Search"
+msgstr "Lista de Naves"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__type
+msgid "Spaceship Type"
+msgstr "Tipo de Nave"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__width
+msgid "Spaceship Width [meters]"
+msgstr "Ancho de Nave [metros]"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_website
+msgid "Spacial Mission"
+msgstr "Misión Espacial"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
+msgid "Specs"
+msgstr "Especifícaciones"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__budget_staff
+msgid "Staff Cost"
+msgstr "Asignación para Personal"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__budget_supplies
+msgid "Supplies"
+msgstr "Viveres"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
+msgid "Task"
+msgstr "Tareas"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__name
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__name
+msgid "Title"
+msgstr "Título"
+
+#. module: spacial_mission
+#: model:ir.model.fields.selection,name:spacial_mission.selection__spacial_mission_spaceship__type__transport
+msgid "Transport"
+msgstr "Transporte"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_search
+msgid "Type Mission"
+msgstr "Tipo de Misión"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_search
+msgid "Type Spaceship"
+msgstr "Tipo de Nave"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.mission_website
+msgid "Type:"
+msgstr "Tipo"
+
+#. module: spacial_mission
+#: model:ir.model.fields.selection,name:spacial_mission.selection__spacial_mission_mission__type__urgent
+msgid "Urgent"
+msgstr "Urgente"
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__user_id
+msgid "User"
+msgstr "Usuario"
+
+#. module: spacial_mission
+#: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_graph
+msgid "Width"
+msgstr "Ancho"
+
+#. module: spacial_mission
+#: model:ir.model,name:spacial_mission.model_spacial_mission_project_wizard
+msgid "Wizard: Quick Project for Mission"
+msgstr "Asistente: Registro de Proyecto de la Misión."
+
+#. module: spacial_mission
+#: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_project_wizard__active
+msgid "active"
+msgstr "activo"
