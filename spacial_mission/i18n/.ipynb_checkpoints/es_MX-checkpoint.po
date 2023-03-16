@@ -419,7 +419,7 @@ msgstr "Costo Misión"
 #. module: spacial_mission
 #: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
 msgid "Mission Dates"
-msgstr "Fechas de Misiones"
+msgstr "Datos de la Misión"
 
 #. module: spacial_mission
 #: model_terms:ir.ui.view,arch_db:spacial_mission.report_mission_document
@@ -495,12 +495,12 @@ msgstr "Misiones"
 #. module: spacial_mission
 #: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
 msgid "Missions Active"
-msgstr ""
+msgstr "Misiones Activas"
 
 #. module: spacial_mission
 #: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_form
 msgid "Missions In-Active"
-msgstr ""
+msgstr "Missiones Inactivas"
 
 #. module: spacial_mission
 #: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_mission__model
@@ -593,7 +593,7 @@ msgstr "Combustible sólido"
 #. module: spacial_mission
 #: model_terms:ir.ui.view,arch_db:spacial_mission.mission_view_form
 msgid "SpaceShip Dates"
-msgstr "Fechas de la Nave"
+msgstr "Datos de la Nave"
 
 #. module: spacial_mission
 #: model:ir.actions.act_window,name:spacial_mission.spaceship_list_action
@@ -627,12 +627,12 @@ msgstr "Longiutd de Nave [metros]"
 #. module: spacial_mission
 #: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_list
 msgid "Spaceship List"
-msgstr ""
+msgstr "Listado de Naves"
 
 #. module: spacial_mission
 #: model_terms:ir.ui.view,arch_db:spacial_mission.spaceship_view_search
 msgid "Spaceship Search"
-msgstr "Lista de Naves"
+msgstr "Busqueda Naves"
 
 #. module: spacial_mission
 #: model:ir.model.fields,field_description:spacial_mission.field_spacial_mission_spaceship__type
