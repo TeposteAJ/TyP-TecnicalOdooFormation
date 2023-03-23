@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Views Inherit Project -->
+<odoo>
+    <record model="ir.ui.view" id="view_event_form_inherit_events">
+        <field name="name">event.registration.form.inherit.events</field>
+        <field name="model">event.registration</field>
+        <field name="inherit_id" ref="event.registration.form"/>
+        <field name="arch" type="xml">
+            <field name="mobile" position="before">
+                <field name="company_id"/>
+            </field>
+        </field>
+    </record>
+</odoo>
+
+<!---
+ <xpath expr='//div[@name="oe_kanban_bottom_right"' position="after">
+                <field name="mission_id" />
+            </xpath>
+name="last_update_status"
+
+-->

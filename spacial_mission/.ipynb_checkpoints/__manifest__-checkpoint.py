@@ -13,7 +13,7 @@
     'website': 'https://github.com/TeposteAJ',
     'license': 'GPL-3',
     'category': 'Custom Modules/ Tech Training',
-    'depends': ['project', 'website',],
+    'depends': ['project', 'website','events'],
     'data': [
         'security/spacial_mission_groups.xml',
         'security/spacial_mission_security.xml',
@@ -25,6 +25,7 @@
         'wizard/make_project_mission_views.xml',
         'report/mission_report_template.xml',
         'views/space_web_templates.xml',
+        'views/events_views_inherit.xml',
         
     ],
     'demo': [
